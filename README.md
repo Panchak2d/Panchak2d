@@ -10,20 +10,23 @@ Currently learning C++ and Vulkan while building software with Rust, TypeScript,
 
 ### [Aerini](https://github.com/Panchak2d/Aerini)
 
-A local-first workflow automation engine built to be self-hostable, extensible, and embeddable. Aerini combines visual workflow automation with AI integration, local model support, and tools for connecting AI agents to executable workflows.
+A local-first, open-source workflow automation engine designed to be self-hostable, extensible, and embeddable. Aerini combines visual automation, AI-powered workflows, local model support, and developer-focused integration capabilities in a system that runs on infrastructure you control.
 
-**Key capabilities include:**
+**Key capabilities:**
 
-- **Visual workflow automation:** Create, connect, validate, and execute workflows through a visual editor.
-- **AI integration:** Build AI-powered workflows using prompt, memory, and agent-oriented capabilities.
-- **Local LLM support:** Integrate with Ollama, manage local models, and build workflows that use models running on your own hardware.
-- **Model Context Protocol (MCP):** Connect compatible AI clients and agents to Aerini's node catalog and workflow capabilities through its dedicated MCP server, with support for workflow validation and permission-controlled operations.
-- **Extensible plugin system:** Expand the engine with WebAssembly-based plugins.
-- **Desktop and server execution:** Run workflows locally through the desktop application or deploy Aerini Server for self-hosted, continuous execution.
-- **Workflow control and monitoring:** Manage executions, inspect activity, and work with workflow triggers, scheduling, and execution controls.
-- **Integration and developer tooling:** Work with credentials, APIs, webhooks, and reusable workflow components.
+- **Visual workflow automation:** Build workflows by connecting nodes on a canvas, with support for manual execution, scheduling, webhooks, background runs, and workflow monitoring.
+- **Embeddable Rust engine:** Integrate Aerini's workflow execution engine directly into your own Rust applications without requiring the desktop application or a separate Aerini server process.
+- **AI workflows and agents:** Build AI-powered automations using AI Prompt, AI Agent, AI Memory, and other workflow nodes.
+- **Local LLM support:** Connect to Ollama and other OpenAI-compatible model servers, allowing AI workflows to use models running on your own hardware.
+- **Model Context Protocol (MCP):** Let compatible AI clients discover Aerini's nodes, construct and validate workflows, save them, and execute them through its dedicated MCP server, subject to the configured permissions.
+- **Web chat and widget embedding:** Create workflow-powered chat experiences inside Aerini's desktop application or embed a chat widget into your own website.
+- **Sandboxed plugin system:** Extend the node catalog with WebAssembly (Wasm) plugins designed to run within a restricted execution environment.
+- **Standalone server and deployment:** Run workflows without the desktop interface using Aerini Server, including self-hosted deployments.
+- **Integrations and workflow controls:** Work with APIs, credentials, data transformations, conditional logic, loops, and external services.
 
-**Built with:** Rust, TypeScript, Tauri, and WebAssembly.
+**Built with:** Rust, TypeScript, Tauri, and WebAssembly (Wasm).
+
+**Project model:** Local-first, self-hostable, and open source, with AGPL-3.0 and commercial licensing options.
 
 [Website](https://aerini.org) · [Documentation](https://docs.aerini.org) · [Source Code](https://github.com/Panchak2d/Aerini)
 
